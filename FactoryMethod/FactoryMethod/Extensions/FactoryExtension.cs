@@ -18,7 +18,7 @@ namespace FactoryMethod.Extensions
         private static IServiceCollection AddFuncFactory<TInterface>(this IServiceCollection services)
              where TInterface : class
         {
-            services.AddSingleton<Func<IEnumerable<TInterface>>>(x => x.GetRequiredService<IEnumerable<TInterface>>);
+            services.AddSingleton<Func<IEnumerable<TInterface>>>(x => ()=>x.GetRequiredService<IEnumerable<TInterface>>()!);
             return services;
         }
 

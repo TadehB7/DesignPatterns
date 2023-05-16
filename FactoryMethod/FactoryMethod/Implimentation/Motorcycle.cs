@@ -3,7 +3,7 @@ using FactoryMethod.Interfaces;
 
 namespace FactoryMethod.Implimentation
 {
-    public class Motorcycle : IVehicle
+    public class Motorcycle : IMotorcycle
     {
         public VehicleTypes VehicleTypes { get; set; } = VehicleTypes.Motorcycle;
 
