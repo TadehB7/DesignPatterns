@@ -1,6 +1,5 @@
 ﻿using FactoryMethod.Implimentation;
 using FactoryMethod.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace FactoryMethod.Extensions
 {
